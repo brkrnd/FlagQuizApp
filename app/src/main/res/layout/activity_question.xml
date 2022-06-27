@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="22sp">
+
+        <TextView
+            android:id="@+id/questionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_marginHorizontal="32sp"
+            android:textSize="20sp"
+            android:textColor="@color/color5"
+            tools:text="@string/what_country_does_this_flag_belong_to">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/flagImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12sp"
+            tools:src="@drawable/china_flag">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:indeterminate="false"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:max="12"
+                android:minHeight="50dp"
+                android:progress="4">
+            </ProgressBar>
+
+            <TextView
+                android:id="@+id/progressBarTextView"
+                android:background="@drawable/selected_option_border"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color3"
+                android:textStyle="bold|italic"
+                tools:text="4/12"
+                android:shadowColor="@color/color5"
+                android:shadowDy="@integer/material_motion_duration_long_2"
+                android:shadowDx="@integer/material_motion_duration_long_2"
+                android:shadowRadius="@integer/material_motion_duration_long_2">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/optionOneText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_border"
+            android:layout_marginHorizontal="48sp"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textColor="@color/color5"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            tools:text="Hello"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/optionTwoText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_border"
+            android:layout_marginHorizontal="48sp"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textColor="@color/color5"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            tools:text="Hello"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/optionThreeText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_border"
+            android:layout_marginHorizontal="48sp"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textColor="@color/color5"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            tools:text="Hello"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/optionFourText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/option_border"
+            android:layout_marginHorizontal="48sp"
+            android:layout_marginTop="16sp"
+            android:gravity="center"
+            android:padding="12sp"
+            android:textColor="@color/color5"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            tools:text="Hello"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32sp"
+            android:padding="16sp"
+            android:layout_marginHorizontal="64sp"
+            android:text="@string/submit"
+            android:textStyle="italic|bold"
+            android:textColor="@color/color2"
+            android:backgroundTint="@color/color5">
+        </Button>
+
+    </LinearLayout>
+
+</ScrollView>

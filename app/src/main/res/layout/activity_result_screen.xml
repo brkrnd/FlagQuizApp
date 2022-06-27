@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultScreen"
+    android:background="@drawable/quiz_app_background"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8sp"
+            android:layout_gravity="center"
+            android:text="@string/congratulations"
+            android:textStyle="bold|italic"
+            android:textSize="32sp"
+            android:background="@color/color2"
+            android:layout_marginHorizontal="48sp"
+            android:layout_marginBottom="24sp">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4sp"
+            android:layout_gravity="center"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:background="@color/color2"
+            android:layout_marginHorizontal="64sp">
+        </TextView>
+
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_again"
+            android:backgroundTint="@color/color5"
+            android:layout_gravity="center"
+            android:layout_marginTop="72sp"
+            android:padding="10sp"
+            android:textStyle="bold">
+        </Button>
+
+        </LinearLayout>
+
+</ScrollView>
