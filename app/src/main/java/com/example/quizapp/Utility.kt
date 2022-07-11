@@ -1,7 +1,6 @@
 package com.example.quizapp
 
 import android.view.Window
-import android.view.WindowInsetsController
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsControllerCompat
 
