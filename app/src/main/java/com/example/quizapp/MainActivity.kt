@@ -16,6 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        setFullScreen(window)
+        lightStatusBar(window, false)
+
         startButton = findViewById(R.id.startButton)
         editTextName = findViewById(R.id.editTextName)
 
